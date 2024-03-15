@@ -1,0 +1,85 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+
+/* Card Css */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.card {
+  border: 1px solid;
+  border-radius: 30px;
+  width: 250px;
+  height: 150px;
+  max-height: 150px;
+  text-align: left;
+  padding: 16px;
+}
+.card:hover {
+  box-shadow: 4px 6px 
+}
+.card:focus, .card:active {
+  outline: 4px solid blue;
+} 
+.card { position: relative; }
+.total-count {
+    position: absolute;
+    inset: 0px 0px auto auto;
+    background-color: rgba(100, 100, 100);
+    border-radius: 20px;
+    box-shadow: 2px 2px;
+    min-width: 16px;
+    font-size: small;
+    text-align: center;
+    color: rgba(200, 200, 200);
+}
+.scroll {
+    overflow: auto;
+    max-height: inherit;
+    max-width: inherit;
+}
+.entry{
+    background-color: aliceblue;
+    margin-top: 4px;
+    border-radius: 16px;
+    padding: 8px;
+    font-size: small;
+    font-weight: 700;
+}
+.all-entry {
+    max-height: inherit;
+}`
