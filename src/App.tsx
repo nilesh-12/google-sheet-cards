@@ -1,4 +1,4 @@
-import { useState, useEffect, useMemo } from 'react'
+import { useState, useMemo } from 'react'
 import './App.css'
 import app from './lib/app';
 import RenderQuery from './RenderQuery';
@@ -72,9 +72,14 @@ const Enum = {
   srNo: 'Sr.',
 }
 
-function Card({ item, title }) {
+interface CardProps {
+  item: Array<any>;
+  title: string;
+}
+
+function Card({ item, title }: CardProps) {
   const [showResult, setResult] = useState(false);
-  let result = title
+  let result: React.ReactNode = title
 
   if (showResult) {
     result = (
